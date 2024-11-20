@@ -1,0 +1,13 @@
+
+.gradient-shadow {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.custom-gradient {
+  background: linear-gradient(to bottom right, #fff 40%, #4cd1fd8f 90%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+input,
+input::placeholder {
+    font: 1.25rem/3 sans-serif;
+}

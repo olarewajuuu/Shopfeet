@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopfeet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white fixed top-0 w-full" style="z-index: 50;">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <!-- Mobile Hamburger Menu -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-600 focus:outline-none">
+            <img src="/images/hambuger.svg" alt="">
+          </button>
+        </div>
+
+        <!-- Logo -->
+        <div class="text-xl font-bold text-gray-800">
+          <a href="#" class="flex items-center"><img src="/images/logopart.svg" alt=""><span
+              class="text-[40px] font-[800] text-[#4CD2FD] hover:text-blue-200">hopfeet</span></a>
+        </div>
+
+        <!-- Links (hidden on mobile) -->
+        <div class="hidden md:flex space-x-10 -ml-40">
+          <a href="#" class="text-[22px] font-[800] text-black hover:text-[#4CD2FD]">Home</a>
+          <a href="#" class="text-[22px] font-[800] text-black hover:text-[#4CD2FD]">About</a>
+          <a href="#" class="text-[22px] font-[800] text-black hover:text-[#4CD2FD]">Categories</a>
+          <a href="#" class="text-[22px] font-[800] text-black hover:text-[#4CD2FD]">Contact Us</a>
+        </div>
+
+        <!-- Search and Cart Icons -->
+        <div class="flex items-center space-x-4 md:space-x-20">
+          <button class="text-gray-600 hover:text-blue-500 focus:outline-none">
+            <img src="/images/search-line.svg" alt="">
+          </button>
+          <button class="text-gray-600 hover:text-blue-500 focus:outline-none">
+            <img src="/images/cart-outline.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <!-- Sliding Mobile Menu -->
+      <div id="mobile-menu"
+        class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class=" flex items-center justify-between my-8 px-4 pb-4 border-b-2 border-[#4CD2FD]">
+          <a href="#" class="flex items-center"><img class="w-[20px]" src="/images/logopart.svg" alt=""><span
+              class="text-[22px] font-[600] text-[#4CD2FD] hover:text-blue-200">hopfeet</span></a>
+          <button id="close-btn" class=" text-gray-600 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav class="my-8">
+          <a href="#" class="block py-2 px-4 text-[16px] font-[600] text-black hover:text-[#4CD2FD]">Home</a>
+          <a href="#" class="block py-2 px-4 text-[16px] font-[600] text-black hover:text-[#4CD2FD]">About</a>
+          <a href="#" class="block py-2 px-4 text-[16px] font-[600] text-black hover:text-[#4CD2FD]">Categories</a>
+          <a href="#" class="block py-2 px-4 text-[16px] font-[600] text-black hover:text-[#4CD2FD]">Contact Us</a>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section  -->
+  <section class="custom-gradient gradient-shadow min-h-screen flex items-center mt-20 md:mt-0">
+    <div class="mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-96 px-4 md:px-8">
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2 ">
+        <img src="/images/heroImg.svg" alt="Hero Image" class="mx-auto">
+      </div>
+      <!-- Text Section -->
+      <div class="w-full  text-left md:text-left">
+        <p class="text-lg text-gray-600 mb-6">make a mark with your <br>
+          feet every where you go to........</p>
+        <button
+          class="px-6 py-3 bg-[#4CD2FD] text-white font-medium text-lg rounded-lg shadow-md hover:bg-[#38b3df] transition duration-300">
+          Shop Now >>
+        </button>
+      </div> 
+    </div>
+  </section>
+  <br>
+  <section class="mt-20 flex items-center justify-center">
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold  mb-8 text-gray-800">Categories</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+        <!-- Male Category -->
+        <div class="relative group object-cover ">
+          <div class="flex items-center gap-4 absolute top-6 left-6">
+            <span>Men</span>
+            <img src="/images/Men.svg" alt="">
+          </div>
+          <img src="/images/maleCategory.svg" alt="Male Category"
+            class="w-full h-full rounded-lg border-y-[10px] border-x-[5px] border-[#4CD2FD]">
+        </div>
+        <!-- Female Category -->
+        <div class="relative group object-cover ">
+          <div class="flex items-center gap-4 absolute top-6 left-6">
+            <span>Women</span>
+            <img src="/images/Women.svg" alt="">
+          </div>
+          <img src="/images/femaleCategory.svg" alt="Female Category"
+            class="w-full h-full rounded-lg border-y-[10px] border-x-[5px] border-[#4CD2FD]">
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="mx-20 h-6">
+
+  <!-- Top Categories  -->
+  <section class="mt-20 flex items-center justify-center">
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">Top Picks</h2>
+      <!-- Scrollable Section -->
+      <div class="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory mb-8">
+        <!-- Picture 1 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe1.svg" alt="Top Pick 1" class="w-full h-64 rounded-lg">
+        </div>
+        <!-- Picture 2 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe2.svg" alt="Top Pick 2" class="w-full h-64 rounded-lg">
+        </div>
+        <!-- Picture 3 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe3.svg" alt="Top Pick 3" class="w-full h-64 rounded-lg">
+        </div>
+        <!-- Picture 4 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe4.svg" alt="Top Pick 4" class="w-full h-6r rounded-lg">
+        </div>
+      </div>
+      <!-- Show More Button -->
+      <div class="text-centr">
+        <button
+          class="px-12 py-3 text-white font-medium text-lg rounded-lg text-[#4CD2FD] border-2 border-[#4CD2FD] hover:bg-blue-600 transition duration-300"
+          style="color: #4CD2FD;">
+          Show all >>
+        </button>
+      </div>
+    </div>
+  </section>
+  <hr class="mx-20 h-6">
+
+
+  <!-- Top Categories  -->
+  <section class="mt-20 flex items-center justify-center">
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">New Releases</h2>
+      <!-- Scrollable Section -->
+      <div class="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory mb-8">
+        <!-- Picture 1 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe5.svg" alt="Top Pick 1" class="w-full h-64 rounded-lg">
+        </div>
+        <!-- Picture 2 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe6.svg" alt="Top Pick 2" class="w-full h-64 rounded-lg">
+        </div>
+        <!-- Picture 3 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe4.svg" alt="Top Pick 3" class="w-full h-64 rounded-lg">
+        </div>
+        <!-- Picture 4 -->
+        <div class="flex-shrink-0 w-64 snap-start">
+          <img src="/images/shoe2.svg" alt="Top Pick 4" class="w-full h-6r rounded-lg">
+        </div>
+      </div>
+      <!-- Show More Button -->
+      <div class="text-centr">
+        <button
+          class="px-12 py-3 text-white font-medium text-lg rounded-lg text-[#4CD2FD] border-2 border-[#4CD2FD] hover:bg-blue-600 transition duration-300"
+          style="color: #4CD2FD;">
+          Show all >>
+        </button>
+      </div>
+    </div>
+  </section>
+  <hr class="mx-20 h-6">
+
+  <section class="my-20 flex items-center justify-center">
+    <div class="text-center max-w-md mx-auto">
+      <!-- Heading -->
+      <h2 class="text-[19px] font-bold text-gray-800 mb-4">Be the first to know about <br>
+        new releases from our store</h2>
+      <!-- Form -->
+      <form class="flex flex-col items-center gap-4">
+        <div class="border-b-2 border-[#4CD2FD] flex items-center">
+          <input type="email" placeholder="enter email"
+            class="w-full sm:w-auto flex-grow pr-10 border-none focus:outline-none focus:ring-blue-500" required>
+          <img src="./images/email.svg" alt="">
+        </div>
+        <button type="submit"
+          class="px-12 py-3 text-white font-medium text-lg rounded-lg text-[#4CD2FD] border-2 border-[#4CD2FD] hover:bg-blue-600 transition duration-300"
+          style="color: #4CD2FD;">
+          Register for Newsletter
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class=" text-white py-8" style="background-color: #4CD2FDB2; color: #000000CC;">
+    <div class="container mx-auto px-4 flex flex-wrap md:gap-[200px] items-start gap-[100px]">
+      <!-- Company Section -->
+      <div class="flex flex-col text-[16px] font-[600]">
+        <h4 class="text-[18px] font-[800] mb-4">Company</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Career</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Help & Support Section -->
+      <div class="flex flex-col text-[16px] font-[600]">
+        <h4 class="text-[18px] font-[800] mb-4">Help & Support</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:underline">Security</a></li>
+          <li><a href="#" class="hover:underline">Privacy and Policy</a></li>
+          <li><a href="#" class="hover:underline">GDPR</a></li>
+        </ul>
+      </div>
+      <!-- Social Section -->
+      <div class="flex flex-col text-[15px] font-[300]">
+        <h4 class="text-[18px] font-[800] mb-4">Social</h4>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="Facebook" class="hover:text-blue-400">
+            <img src="/images/facebook-circle.svg" alt="">
+          </a>
+          <a href="#" aria-label="Twitter" class="hover:text-blue-400">
+            <img src="/images/twitter.svg" alt="">
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-pink-400">
+            <img src="/images/pinterest2.svg" alt="">
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-pink-400">
+            <img src="/images/instagram.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="mt-6 text-center">
+      © Shopfeet
+    </div>
+  </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
